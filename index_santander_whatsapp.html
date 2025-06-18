@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PIX Recebido - Santander</title>
+  <link rel="icon" type="image/png" href="https://logodownload.org/wp-content/uploads/2015/03/santander-logo-0.png" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      text-align: center;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+    }
+    .header {
+      background-color: #ec0000;
+      padding: 15px;
+      text-align: center;
+    }
+    .header img {
+      height: 40px;
+    }
+    .title {
+      color: #ec0000;
+      font-size: 22px;
+      font-weight: bold;
+      margin: 25px 0 10px;
+    }
+    .value {
+      font-size: 26px;
+      font-weight: bold;
+      color: #ec0000;
+      margin: 20px 0;
+    }
+    .button {
+      background-color: #ec0000;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .alert {
+      background-color: #fff3cd;
+      padding: 15px;
+      border: 1px solid #ffeeba;
+      border-radius: 5px;
+      color: #856404;
+      margin-top: 30px;
+    }
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+      margin-top: 30px;
+    }
+    .support-link, .whatsapp-link {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .whatsapp-link {
+      color: #25D366;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="page1">
+    <div class="header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Logo_Santander.svg/512px-Logo_Santander.svg.png" alt="Santander" />
+    </div>
+    <div class="title">PIX Recebido</div>
+    <p>Você recebeu um valor de:</p>
+    <div class="value">R$ 80.000,00</div>
+    <p>Clique no botão abaixo para confirmar e acessar sua conta:</p>
+    <a href="#" class="button" onclick="showPage2()">Confirmar Crédito</a>
+    <br />
+    <a class="whatsapp-link" href="https://wa.me/12565928593" target="_blank">📲 Falar com suporte via WhatsApp</a>
+  </div>
+
+  <div class="container" id="page2" style="display:none;">
+    <div class="header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Logo_Santander.svg/512px-Logo_Santander.svg.png" alt="Santander" />
+    </div>
+    <div class="title">Status da Transação</div>
+    <p><strong>Valor:</strong> R$ 80.000,00</p>
+    <p><strong>Chave PIX:</strong> 81989294779</p>
+    <p><strong>ID:</strong> #BNXBR1293850SKW</p>
+    <p><strong>Data:</strong> 18/06/2025 - 13:42</p>
+    <div class="alert">
+      ⚠️ Sua transação está pendente devido à verificação de identidade (KYC).<br />
+      A liberação será realizada após a conclusão do processo no aplicativo Santander.
+    </div>
+    <a class="whatsapp-link" href="https://wa.me/12565928593" target="_blank">📲 Falar com suporte via WhatsApp</a>
+  </div>
+
+  <div class="footer">
+    Banco Santander (Brasil) S.A. • CNPJ 90.400.888/0001-42<br />
+    © 2025 Santander. Todos os direitos reservados.
+  </div>
+
+  <script>
+    function showPage2() {
+      document.getElementById("page1").style.display = "none";
+      document.getElementById("page2").style.display = "block";
+    }
+  </script>
+</body>
+</html>
